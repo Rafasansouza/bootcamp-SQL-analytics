@@ -2,4 +2,4 @@
 
 Verificar o projeto completo no Github
 
-https://github.com/lvgalvao/Northwind-SQL-Analytics/tree/main
+https://github.com/Rafasansouza/Northwind-SQL-advanced
