@@ -124,12 +124,12 @@ CREATE TABLE RegistroVendas (
 -- Criação de um TRIGGER
 CREATE OR REPLACE FUNCTION verifica_estoque() RETURNS TRIGGER AS $$
 DECLARE
-    qted_atual INTEGER;
+    qtde_atual INTEGER;
 BEGIN
-    SELECT qtde_disponivel INTO qted_atual
+    SELECT qtde_disponivel INTO qtde_atual
     FROM Produto WHERE cod_prod = NEW.cod_prod;
-    IF qted_atual < NEW.qtde_vendida THEN
-        RAISE EXCEPTION 'Quantidade indisponivel em estoque'
+    IF qtde_atual < NEW.qtde_vendida THEN
+        RAISE EXCEPTION 'Quantidade indisponivel em estoque';
     ELSE
         UPDATE Produto SET qtde_disponivel = qtde_disponivel - NEW.qtde_vendida
         WHERE cod_prod = NEW.cod_prod;
