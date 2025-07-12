@@ -1,4 +1,4 @@
-# Aula 11 : Ordem de consulta
+# Aula 11 : Ordem de consulta SQL
 
 Para maximizar a velocidade da sua consulta em qualquer mecanismo SQL, é essencial entender a ordem de execução do SQL. Embora seja possível trabalhar sem esse conhecimento, recomendo a leitura deste artigo para obter um entendimento rápido sobre isso.
 
